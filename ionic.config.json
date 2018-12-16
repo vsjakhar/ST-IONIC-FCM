@@ -1,5 +1,7 @@
 {
   "name": "ST-IONIC-FCM",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
