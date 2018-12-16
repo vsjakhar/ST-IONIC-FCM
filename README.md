@@ -109,6 +109,13 @@ This README would normally document whatever steps are necessary to get your app
 	ionic cordova plugin add cordova-plugin-file-transfer
 	npm install --save @ionic-native/file-transfer@beta
 
+### Angularfire ###
+	npm install --save angularfire2 firebase
+
+### Firebase Cloud Messaging ###
+	ionic cordova plugin add cordova-plugin-firebase
+	npm install --save @ionic-native/firebase@5.0.0-beta.14
+
 ### Release App For Deployment ###
 	ionic cordova build --release android
 	ionic cordova build android --prod --release
