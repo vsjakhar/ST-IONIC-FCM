@@ -12,35 +12,35 @@ This README would normally document whatever steps are necessary to get your app
 * Version
 * [Learn Ionic Component](https://ionicframework.com/docs/components/)
 
-###Install Ionic App with Sidebar###
+### Install Ionic App with Sidebar ###
 	$ ionic start ST-IONIC-FCM sidemenu
 	$ ionic start ST-IONIC-FCM blank
 	$ ionic start ST-IONIC-FCM tabs
 * Official Docs [Learn More](https://ionicframework.com/getting-started#cli)
 
-###IONIC Command Help###
+### IONIC Command Help ###
 * [Commane Help](https://ionicframework.com/docs/cli/commands.html)
 
-###Change the Package Name According to your App and Domain Name also App Version###
+### Change the Package Name According to your App and Domain Name also App Version ###
 	<widget id="io.ionic.starter" version="0.0.1"> => <widget id="com.securitytroops.ionicfcm" version="0.0.1">
 
-###Generate Resources for Logo and Splash Screen###
+### Generate Resources for Logo and Splash Screen ###
 	# ionic cordova resources
 	# ionic cordova resources ios
 	# ionic cordova resources android
 	# ionic cordova resources ios --force
 
-###Serve IONIC App into Browser###
+### Serve IONIC App into Browser ###
 	# ionic serve
 	# ionic serve --l
 
-###Add IONIC Platform###
+### Add IONIC Platform ###
 	$ ionic cordova platform 
 	$ ionic cordova platform add ios
 	$ ionic cordova platform add android
 	$ ionic cordova platform rm ios
 
-###Build Into Android Phone###
+### Build Into Android Phone ###
 	$ ionic cordova build ios
 	$ ionic cordova build ios --prod --release
 	$ ionic cordova build ios --device --prod --release -- --developmentTeam="ABCD" --codeSignIdentity="iPhone Developer" --packageType="app-store"
@@ -50,25 +50,25 @@ This README would normally document whatever steps are necessary to get your app
 	$ ionic cordova build android --prod --release -- -- --versionCode=55
 	$ ionic cordova build android --prod --release -- -- --gradleArg=-PcdvBuildMultipleApks=true
 
-###Compile Code for Platform###
+### Compile Code for Platform ###
 	$ ionic cordova compile ios
 	$ ionic cordova compile ios --device
 	$ ionic cordova compile android
 
-###Run with Desktop Emulators###
+### Run with Desktop Emulators ###
 	$ ionic cordova emulate 
 	$ ionic cordova emulate ios
 	$ ionic cordova emulate ios -lc
 	$ ionic cordova emulate android -lc --address=localhost
 	$ ionic cordova emulate android -lc -- -d
 
-###Add New Plugins like Camera and InAppBrowser###
+### Add New Plugins like Camera and InAppBrowser ###
 	$ ionic cordova plugin 
 	$ ionic cordova plugin add cordova-plugin-inappbrowser@latest
 	$ ionic cordova plugin add phonegap-plugin-push --variable SENDER_ID=XXXXX
 	$ ionic cordova plugin rm cordova-plugin-camera
 
-###Run Into Android or iOS Phone###
+### Run Into Android or iOS Phone ###
 	$ ionic cordova run 
 	$ ionic cordova run ios
 	$ ionic cordova run ios -lc
@@ -76,14 +76,15 @@ This README would normally document whatever steps are necessary to get your app
 	$ ionic cordova run android -lc --address=localhost
 	$ ionic cordova run android -lc -- -d
 
-###Generate Auth Service###
+### Generate Auth Service ###
 	#ionic g provider authService
 	#ionic generate service services/authGuard
+	#ionic generate service services/fcm
 
-###Generate New Page###
+### Generate New Page ###
 	#ionic g page login
 
-###All Generate Commands###
+### All Generate Commands ###
 	$ ionic generate 
 	$ ionic generate component
 	$ ionic generate directive
