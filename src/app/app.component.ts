@@ -52,6 +52,12 @@ export class AppComponent {
           this.presentToast(msg.aps.alert);
         } else {
           this.presentToast(msg.body);
+          if (msg.tap) {
+            console.log("If app Running in Background");
+          }else{
+            console.log("If App already Opened");
+          }
+          console.log(msg);
         }
       });
   }
@@ -59,6 +65,7 @@ export class AppComponent {
   initializeApp() {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
+      this.statusBar.backgroundColorByHexString('#4c8dff');
       this.splashScreen.hide();
       this.notificationSetup();
     });
